@@ -1,0 +1,41 @@
+pretrain: ./exp/clip_k400/ViT-B/32/autobio/model_best.pt #a normal model
+seed: 1024
+data:
+    dataset: autobio
+    modality: RGB
+    num_segments: 8
+    seg_length: 1
+    split: 1
+    batch_size: 1
+    workers: 16
+    gpus: 4
+    num_classes: 69
+    image_tmpl: 'img_{:05d}.jpg'
+    val_list: './data/autobio/autobio_test_frames.txt' #
+    label_list: './data/autobio/autobio_labels.csv'
+    ambiguity_list: './data/autobio/ambiguity.json'
+    index_bias: 1
+    input_size: 224
+    random_shift: False
+network:
+    arch: ViT-B/32  #ViT-B/32 ViT-B/16
+    init: True
+    tsm: False
+    drop_out: 0.0 
+    emb_dropout: 0.0 
+    bn_momentum: 0.1
+    consensus_type: avg
+    type: clip_k400
+    sim_header: "Transf"   #Transf   meanP  LSTM  Conv_1D  Transf_cls
+    joint: False
+    describe:
+    ratio: 1
+    f_ratio: 10
+logging:
+    print_freq: 10
+    eval_freq: 1
+demo:
+    enable: True
+    input_video:
+    output_file:
+    label_file_path:

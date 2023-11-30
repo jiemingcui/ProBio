@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Install **randaugment** via [this link](https://github.com/ildoonet/pytorch-randaugment/blob/master/setup.py).
 
 ## Data Preparation
-1. Download our [processed data](https://drive.google.com/file/d/1k8xVfPxRHKmNSFTjtF_uo9AnGxoVQhtq/view?usp=sharing) and put it in ./ProBio.
+1. Download our [processed data](https://drive.google.com/file/d/1IBHlKTDnBTdENKykp0s_ps6HvSuFvDLX/view?usp=sharing) and put it in ./ProBio.
 2. Extract videos into frames and separate them into train, test, and val sets.
 ```bash
 git clone https://github.com/jiemingcui/ProBio.git
@@ -84,6 +84,10 @@ Special thanks to [Putao](https://putao537.github.io/) for his significant contr
 
 ## Question
 If you get stuck after training to a certain number of steps, then please try to locate the Wandb problem.
+
+## TODO
+- [ ] Release the code for transparent solution tracking.
+
 
 # Acknowledgments
 Our code is based on [ActionCLIP](https://github.com/sallymmx/ActionCLIP), [CLIP](https://github.com/openai/CLIP), and [STM](https://openaccess.thecvf.com/content_ICCV_2019/papers/Jiang_STM_SpatioTemporal_and_Motion_Encoding_for_Action_Recognition_ICCV_2019_paper.pdf). Thanks for these great projects.

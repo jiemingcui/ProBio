@@ -4,13 +4,13 @@
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a> -->
     <a href='https://arxiv.org/abs/2311.00556'>
-      <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Paper arXiv'>
+      <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=red' alt='Paper arXiv'>
     </a>
     <a href='https://probio-dataset.github.io/'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=plastic&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
     </a>
     <a href='https://drive.google.com/file/d/1IBHlKTDnBTdENKykp0s_ps6HvSuFvDLX/view'>
-      <img src='https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow' alt='Dataset Download'>
+      <img src='https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Google%20Drive&logoColor=green' alt='Dataset Download'>
     </a>
     <!-- <a href='https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo'>
       <img src='https://img.shields.io/badge/Demo-HuggingFace-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow' alt='HuggingFace'>
@@ -23,13 +23,13 @@
 ![](asset/probio-teaser.png)
 
 
-## TODO
+## TODOs
 - [x] Release data.
 - [x] Release the code for ambiguous action recognition.
 - [ ] Release the code for transparent solution tracking.
 
 ## Introduction
-The challenge of replicating research results has posed a significant impediment to the field of molecular biology. The advent of modern intelligent systems has led to notable progress in various domains. Consequently, we embarked on an investigation of intelligent monitoring systems as a means of tackling the issue of the reproducibility crisis. Specifically, we first curate a comprehensive multimodal dataset, named **ProBio**, as an initial step towards this objective. This dataset comprises fine-grained hierarchical annotations intended for the purpose of studying activity understanding in Molecular Biology Lab (BioLab). Next, we devise two challenging benchmarks, transparent solution tracking and multimodal action recognition, to emphasize the unique characteristics and difficulties associated with activity understanding in BioLab settings. Finally, we provide a thorough experimental evaluation of contemporary video understanding models and highlight their limitations in this specialized domain to identify potential avenues for future research. We hope **ProBio** with associated benchmarks may garner increased focus on modern AI techniques in the realm of molecular biology.
+The challenge of replicating research results has posed a significant impediment to the field of molecular biology. The advent of modern intelligent systems has led to notable progress in various domains. Consequently, we embarked on an investigation of intelligent monitoring systems as a means of tackling the issue of the reproducibility crisis. Specifically, we first curate a comprehensive multimodal dataset, named **ProBio**, as an initial step towards this objective. This dataset comprises fine-grained hierarchical annotations intended for the purpose of studying activity understanding in Molecular Biology Lab (BioLab). Next, we devise two challenging benchmarks, transparent solution tracking and multimodal action recognition, to emphasize the unique characteristics and difficulties associated with activity understanding in BioLab settings. Finally, we provide a thorough experimental evaluation of contemporary video understanding models and highlight their limitations in this specialized domain to identify potential avenues for future research. We hope ![](asset/icon.png =100x100)**ProBio** with associated benchmarks may garner increased focus on modern AI techniques in the realm of molecular biology.
 
 ## Environment
 python==3.8.16
@@ -75,6 +75,8 @@ This model is trained on **1 NVIDIA 3090**
 # train 
 python train.py  --config ./configs/k400/autobio_train.yaml
 ```
+If you get stuck after training to a certain number of steps, then please try to locate the Wandb problem.
+
 ## Test 
 ```
 # test
@@ -89,8 +91,9 @@ After the submission, we changed the way of sampling video data and further opti
 
 Special thanks to [Putao](https://putao537.github.io/) for his significant contribution to achieving this result.
 
-## Question
-If you get stuck after training to a certain number of steps, then please try to locate the Wandb problem.
+
+## Acknowledgments
+Our code is based on [ActionCLIP](https://github.com/sallymmx/ActionCLIP), [CLIP](https://github.com/openai/CLIP), and [STM](https://openaccess.thecvf.com/content_ICCV_2019/papers/Jiang_STM_SpatioTemporal_and_Motion_Encoding_for_Action_Recognition_ICCV_2019_paper.pdf). Thanks for these great projects.
 
 ## Citation
 ```text
@@ -101,7 +104,4 @@ If you get stuck after training to a certain number of steps, then please try to
     year={2023}
 }
 ```
-
-# Acknowledgments
-Our code is based on [ActionCLIP](https://github.com/sallymmx/ActionCLIP), [CLIP](https://github.com/openai/CLIP), and [STM](https://openaccess.thecvf.com/content_ICCV_2019/papers/Jiang_STM_SpatioTemporal_and_Motion_Encoding_for_Action_Recognition_ICCV_2019_paper.pdf). Thanks for these great projects.
 

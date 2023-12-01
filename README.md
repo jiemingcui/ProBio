@@ -1,4 +1,4 @@
-# ![](asset/icon.png) ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab (NeurIPS 2023 D&B Track)
+# ![](asset/icon1.png) ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab (NeurIPS 2023 D&B Track)
 <p align="left">
     <!-- <a href='https://scenediffuser.github.io/paper.pdf'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
@@ -22,7 +22,6 @@
 
 ![](asset/probio-teaser.png)
 
-![](asset/icon.png)
 ## TODOs
 - [x] Release data.
 - [x] Release the code for ambiguous action recognition.
@@ -84,7 +83,7 @@ This model is trained on **1 NVIDIA 3090**
 # train 
 python train.py  --config ./configs/k400/autobio_train.yaml
 ```
-If you get stuck after training to a certain number of steps, then please try to locate the Wandb problem.
+If you get stuck after training to a certain number of steps, then please try to locate the **WandB** problem.
 
 ## Test 
 ```

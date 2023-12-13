@@ -13,7 +13,7 @@
       <img src='https://img.shields.io/badge/Dataset-Download-green?style=plastic&logo=Google%20Drive&logoColor=green' alt='Dataset Download'>
     </a>
     <a href='https://youtu.be/AoqW4-g6nBU'>
-      <img src='https://img.shields.io/badge/Video-Youtube-orange?style=plastic&logo=Video%20Youtube&logoColor=orange' alt='Video Youtube'>
+      <img src='https://img.shields.io/badge/Video-Youtube-orange?style=plastic&logo=Youtube&logoColor=orange' alt='Video Youtube'>
     </a>
     <!-- <a href='https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo'>
       <img src='https://img.shields.io/badge/Demo-HuggingFace-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow' alt='HuggingFace'>
